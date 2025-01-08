@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>애플리케이션배포</title>
+  <style>
+    * {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000000;
+      color: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 50px;
+      font-size: 30px;
+
+      img {
+        width: 150px;
+      }
+
+      ul {
+        display: flex;
+        list-style: none;
+        padding-left: 20px;
+      }
+
+      a {
+        text-decoration: none;
+        list-style: none;
+        padding-left: 50px;
+      }
+    }
+
+    header a:hover {
+      color: #8b8b8b;
+    }
+
+    .video-banner {
+      text-align: center;
+      margin: auto;
+      padding: 50px 0;
+
+      video {
+        width: 900px;
+      }
+
+      h1 {
+        font-size: 100px;
+        margin-top: 100px;
+      }
+    }
+
+    .product-title {
+      text-align: center;
+
+      h2 {
+        font-family: 'BM JUA_TTF';
+        font-size: 60px;
+        font-weight: 100;
+        margin-top: 50px;
+      }
+    }
+
+    .product-list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin: auto;
+      padding: 90px;
+    }
+
+    .product img {
+      height: 400px;
+      margin-bottom: 10px;
+    }
+
+    .product {
+      text-align: center;
+      margin-bottom: 50px;
+
+      p {
+        font-family: 'BM JUA_TTF';
+        font-size: 30px;
+        padding: 10px;
+      }
+
+      s {
+        font-family: 'BM JUA_TTF';
+      }
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      color: white;
+      opacity: 0.9;
+    
+      p{
+        height: 50px;
+        list-style: 40px;
+        font-size: 23px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(26, 26, 26);
+        opacity: 0.9;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <img class="logo" src="./images/나이키 로고.jpg" alt="나이키로고">
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">Men</a></li>
+      <li><a href="#">Women</a></li>
+      <li><a href="#">Kids</a></li>
+      <li><a href="#">Sale</a></li>
+    </ul>
+  </header>
+
+  <figure class="video-banner">
+    <video src="./video/나이키 광고.mp4" autoplay muted loop></video>
+    <h1>JUST DO IT.</h1>
+  </figure>
+
+  <div class="product-title">
+    <h2>상품 목록</h2>
+  </div>
+
+  <div class="product-list">
+    <div class="product">
+      <img src="./images/에어-조던-1-로우-여성-신발-S2rOCbXI.webp" alt="에어-조던-1-로우-여성-신발-S2rOCbXI">
+      <p>에어 조던 1 로우</p>
+      <p>111,200 원</p>
+      <s>139,000</s>
+    </div>
+    <div class="product">
+      <img src="./images/에어-조던-1-하이-85-메탈릭-버건디-신발-sLTw52pK.webp" alt="에어-조던-1-하이-85-메탈릭-버건디-신발-sLTw52pK">
+      <p>에어 조던 1 하이 85 메탈릭 버건디</p>
+      <p>239,000 원</p>
+    </div>
+    <div class="product">
+      <img src="./images/에어-조던-9-g-골프화-tnsFX7NN.webp" alt="에어-조던-9-g-골프화-tnsFX7NN">
+      <p>에어 조던 9 g</p>
+      <p>289,000 원</p>
+    </div>
+    <div class="product">
+      <img src="./images/에어-조던-9-g-nrg-골프화-WEzCGnhv.webp" alt="에어-조던-9-g-nrg-골프화-WEzCGnhv">
+      <p>에어 조던 9 g nrg</p>
+      <p>260,100 원</p>
+      <s>289,000</s>
+    </div>
+    <div class="product">
+      <img src="./images/에어-조던-i-하이-g-남성-골프화-1FEbC61U.webp" alt="에어-조던-i-하이-g-남성-골프화-1FEbC61U">
+      <p>에어 조던 i 하이 g</p>
+      <p>249,000 원</p>
+    </div>
+    <div class="product">
+      <img src="./images/에어-조던-5-레트로-se-남성-신발-5TpNccQL.webp" alt="에어-조던-5-레트로-se-남성-신발-5TpNccQL">
+      <p>에어 조던 5 레트로 se</p>
+      <p>249,000 원</p>
+    </div>
+    <div class="product">
+      <img src="./images/에어-조던-6-레트로-화이트-블랙-남성-신발-pkEmCXoK.webp" alt="에어-조던-1-로우-여성-신발-S2rOCbXI">
+      <p>에어 조던 6 레트로</p>
+      <p>249,000 원</p>
+    </div>
+    <div class="product">
+      <img src="./images/에어-조던-8-레트로-남성-신발-nBkU58Ud.webp" alt="에어-조던-8-레트로-남성-신발-nBkU58Ud">
+      <p>에어 조던 8 레트로</p>
+      <p>249,000 원</p>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Nike, Inc. All rights reserved</p>
+  </footer>
+</body>
+
+</html>
