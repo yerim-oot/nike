@@ -101,8 +101,8 @@
       text-align: center;
       color: white;
       opacity: 0.9;
-    
-      p{
+
+      p {
         height: 50px;
         list-style: 40px;
         font-size: 23px;
@@ -114,7 +114,49 @@
       }
     }
 
-  </style>
+    @media screen and (max-width:1440px) {
+      header ul{
+        font-size: 22px;
+        padding: 0;
+      }
+      .product-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+
+      }
+    }
+
+    @media screen and (max-width:1024px) {
+      .video-banner{
+        video{
+          width: 100%;
+        }
+      }
+      .product-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+      }
+      }
+      @media screen and (max-width:768px) {
+        .video-banner{
+          video{
+            width: 768px;
+          }
+        }
+        .product-list {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          margin: auto;
+        }
+  
+        .product-list{
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      </style>
 </head>
 
 <body>
